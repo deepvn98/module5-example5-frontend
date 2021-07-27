@@ -4,11 +4,12 @@ import {ActivatedRoute, ParamMap, Router} from "@angular/router";
 import {BookService} from "../../service/book.service";
 
 @Component({
-  selector: 'app-detail',
-  templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.scss']
+  selector: 'app-delete',
+  templateUrl: './delete.component.html',
+  styleUrls: ['./delete.component.scss']
 })
-export class DetailComponent implements OnInit {
+export class DeleteComponent implements OnInit {
+message ='';
   id:any;
   book:Ibook={
     id:0,
@@ -33,4 +34,9 @@ export class DetailComponent implements OnInit {
     })
   }
 
+  deleteBook(){
+    this.booksv.deleteBook(this.id).subscribe(()=>{
+      this.message = 'Xoá Thành Công!';
+    })
+  }
 }

@@ -1,18 +1,16 @@
 <br><br>
 
-<div class="row">
+<div class="row" style="margin-left: 30px">
   <div class="col-sm-8">
     <h4> Chi Tiết  Sách! </h4>
   </div>
   <div class="col-sm-4">
     <button [routerLink]="['/list']" >Xem danh sách </button>
   </div>
+<div>
+  <h6>{{message}}</h6>
 </div>
-
-
 <br>
-
-
 <table class="table">
   <thead>
   <tr>
@@ -30,3 +28,11 @@
   </thead>
 
 </table>
+  <div class="col-sm-8">
+    <button type="submit" class="btn btn-primary" (click)="deleteBook()"> Xoá </button>
+  </div>
+  <div class="col-sm-4">
+    <button type="submit" class="btn btn-primary" [routerLink]="['/list']">Thoát</button>
+  </div>
+
+</div>

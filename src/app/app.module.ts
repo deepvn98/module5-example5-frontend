@@ -9,6 +9,7 @@ import { ListbookComponent } from './model/listbook/listbook.component';
 import { DetailComponent } from './model/detail/detail.component';
 import { CreateComponent } from './model/create/create.component';
 import { UpdateComponent } from './model/update/update.component';
+import { DeleteComponent } from './model/delete/delete.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UpdateComponent } from './model/update/update.component';
     ListbookComponent,
     DetailComponent,
     CreateComponent,
-    UpdateComponent
+    UpdateComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
