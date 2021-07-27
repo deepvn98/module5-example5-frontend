@@ -25,6 +25,8 @@
     <td><a [routerLink]="['/detail/'+b.id]">{{b.title}}</a></td>
     <td>{{b.author}}</td>
     <td><button (click)="deleteBook(b.id)">Delete</button></td>
+    <td><button [routerLink]="['/update/'+b.id]">Update</button></td>
+
   </tr>
   </tbody>
 </table>
